@@ -1,0 +1,197 @@
+body{
+    /*background: rgb(180, 238, 227);*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+	align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size:400% 400%;
+    -webkit-animation: Gradient 4s ease infinite;
+    -moz-animation: Gradient 4s ease infinite;    
+    animation: Gradient 4s ease infinite;
+}
+
+/*gradient background color*/
+@-webkit-keyframes Gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+/* Adobe Font */
+.lets-go-Groupie-Gloss{
+    background-color: rgb(180, 238, 227);
+    font-size: 72px;
+    font-weight: 400;
+    font-style: normal;
+    transition: font-size 250ms ease, transform 250ms, opacity 250ms;
+    opacity: 0.4;
+}
+
+.lets-go-Groupie-Gloss:hover{
+    background: rgb(180, 238, 227);
+    border: 3px solid rgb(194, 194, 194);
+    font-size: 200px;
+    opacity: 0.8;
+    font-family: "groupie-gloss", sans-serif; 
+    animation: slide-right 1s infinite, background-color 0.5s infinite;
+}
+
+/* slide-right */
+@keyframes slide-right {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(70px);
+    }
+}
+
+/* background-color */
+@keyframes background-color {
+    from {
+    background-color: rgb(180, 238, 227);
+    }
+    to {
+    background-color: rgb(249, 229, 199, 0);
+    }
+    }
+
+
+/* Google Font */
+.lets-go-Fuggles{
+    font-size: 72px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.5s ease-out;
+	&:hover {
+		font-weight: 600;
+		color: rgb(51, 149, 241);
+        animation: rotate 1s forwards, font-size 1s forwards;
+	}
+}
+
+/* rotate */
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(150deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    75% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* font-size */
+@keyframes font-size {
+    from {
+        font-size: 72px;
+    }
+    to {
+        font-size: 300px;
+    }
+}
+
+/* metaflop */
+@font-face {
+    font-family: 'Bespoke';
+    src: url('fonts/Bespoke-6I_et5qsBW.eot');
+    src: url('fonts/Bespoke-6I_et5qsBW.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bespoke-6I_et5qsBW.woff') format('woff'),
+       url('fonts/Bespoke-6I_et5qsBW.ttf') format('truetype'),
+       url('fonts/Bespoke-6I_et5qsBW.svg#Bespoke-6I_et5qsBW') format('svg');
+  }
+
+.lets-go-Bespoke{
+    font-size: 72px;
+    font-family: 'Bespoke', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.5s ease-out;
+	&:active {
+		font-weight: 600;
+		color: rgb(196, 196, 196);
+		font-size: 200;
+        animation: move 3s infinite, color2 3s infinite;
+	}
+}
+
+/* move */
+@keyframes move {
+        0% {
+            color: rgb(0, 0, 0);
+        }
+        25% {
+            color: rgb(197, 197, 197);
+        }
+        50% {
+            color: rgb(122, 180, 228);
+        }
+        75% {
+            color: rgb(227, 178, 110);
+        }
+        100% {
+            color: rgb(196, 196, 196);
+        }
+        
+}
+
+/* color2 */
+@keyframes color2 {
+    0% {
+    transform: translateX(0);
+    }
+    25% {
+    transform: translateX(350px);
+    }
+    50% {
+    transform: translateY(350px);
+    }
+    75% {
+    transform: translateY(-350px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    
+}
