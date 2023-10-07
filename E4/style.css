@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5D5EE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 700px;
+    height: 103px;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    color: black;
+}
+
+main {
+    width: 700px;
+    background: white;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 32px;
+    height: 113px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 20px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.site-title {
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.nav-links {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*hero section*/
+.hero-section {
+    height: 347px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+
+/*columns for info section*/
+.info-section-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.info-section {
+    height: 319px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 31px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info-section-p {
+    font-size: 14px;
+}
+
+.page {
+    width: 700px;
+    margin: auto;
+}
+
+/*call to action fonts*/
+.cta {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*columns for footer*/
+.footer-section-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+footer {
+    height: 129px;
+    background: white;
+    border: 1px solid black;
+}
+
+/*about section*/
+.section-about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+/*about section paragraph*/
+.about-p {
+    font-size: 10px;
+}
+
+/*social links section*/
+.section-sl {
+    display: flex;
+    align-items: center;
+    padding-top: 31px;
+    padding-left: 20px;
+}
+
+/*social links section fonts*/
+.sl-links {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*footer nav links*/
+.footer-nav {
+    width: 50px;
+    transform: translate(180px, 40px);
+}
+
+/*footer nav links fonts*/
+.footer-links {
+    font-size: 12;
+    font-weight: 600;
+    text-decoration: none;
+}
