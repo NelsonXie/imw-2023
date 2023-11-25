@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*p5.js.canvas*/
+#canvas {
+    width: 100vw;
+    height: 140vh;
+    position: absolute;
+}
+
+canvas {
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+}
+
+.canvas-body {
+    z-index: 50;
+    width: 100vw;
+    height: 140vh;
+    z-index: 30;
+    position: relative;
+}
+
+/*Dragganle Button*/
+#Btn0 {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    height: 100px;
+    padding: 0.5em;
+    background-color: #9C9B9A;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 150;
+    position: relative;
+
+    @media (max-width: 1199px) {
+        width: 220px;
+        height: 100px;
+        font-size: 48px;
+    }
+
+    @media (max-width: 991px) {
+        width: 170px;
+        height: 66px;
+        font-size: 36px;
+    }
+
+    @media (max-width: 767px) {
+        width: 80px;
+        height: 44px;
+        font-size: 24px;
+    }
+
+}
+
+#showBtn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 110%;
+    height: 110%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    background-color: #ADD9EB;
+    border: none;
+
+    @media (min-width: 1199px) {
+        margin: 20px;
+    }
+}
+
+#hideBtn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 110%;
+    height: 110%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    background-color: #ADD9EB;
+    border: none;
+
+    @media (min-width: 1199px) {
+        margin: 20px;
+    }
+}
+
+.BtnP {
+    font-size: clamp(20px, 3vw, 40px);
+    text-align: center;
+    font-family: "mercato-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-weight: 500;
+}
+
+#hideBtn {
+    display: none;
+}
+
+/*patterns*/
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+#container0 {
+    display: none;
+    /*border: 5px solid black;*/
+    width: 960px;
+    height: 700px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 100;
+
+    @media (max-width: 1199px) {
+        width: 960px;
+        height: 700px;
+    }
+
+    @media (max-width: 991px) {
+        width: 650px;
+        height: 470px;
+    }
+
+    @media (max-width: 767px) {
+        width: 440px;
+        height: 320px;
+    }
+}
+
+#container {
+    background-color: #695F54;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    width: 945px;
+    height: 681px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    @media (max-width: 1199px) {
+        width: 945px;
+        height: 681px;
+    }
+
+    @media (max-width: 991px) {
+        width: 630px;
+        height: 454px;
+    }
+
+    @media (max-width: 767px) {
+        width: 420px;
+        height: 303px;
+    }
+}
+
+#one {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#two {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#three {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#four {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#five {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#six {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*background*/
+#container2 {
+    position: absolute;
+    z-index: -50;
+}
+
+#container1 {
+    background-color: #6B8C99;
+    width: 100vw;
+    height: 140vh;
+    position: relative;
+    z-index: 1;
+}
+
+li {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(103, 43, 43);
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+ul {
+    float: left;
+    list-style: none;
+}
+
+/*music*/
+.music {
+    width: 310px;
+    height: 70px;
+    text-align: center;
+}
+
+/*
+.one {
+    width: 33.3%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.two {
+    width: 33.3%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid rgb(200, 255, 255);
+}
+
+.three {
+    width: 33.3%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid rgb(150, 255, 255);
+}
+
+.four {
+    width: 33.3%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid rgb(100, 255, 255);
+
+}
+
+.five {
+    width: 33.3%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid rgb(50, 255, 255);
+}
+
+.six {
+    width: 33.3%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid rgb(0, 255, 255);
+}
+*/
