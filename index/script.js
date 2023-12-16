@@ -1,3 +1,5 @@
+console.log("%c%cNelsonXie", "line-height:28px;", "line-height:28px;padding:4px;background:#2ccbe6;color:#FADFA3;font-size:14px;");
+
 const Sound = new Audio("softpiano.mp3");
 const Sound1 = new Audio("piano1.mp4");
 const Sound2 = new Audio("piano2.mp4");
@@ -33,10 +35,6 @@ $(document).ready(function () {
         "background-size": "contain"
     });
 });
-
-$("#container1").css("display", "none");
-$("#container2").css("display", "none");
-$("#container3").css("display", "none");
 
 $("#Excercises").on("click", function () {
     $("#container1").show(function () { })

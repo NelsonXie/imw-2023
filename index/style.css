@@ -888,16 +888,22 @@ button:hover {
 #container1,
 #container2,
 #container3 {
+    display: flex;
     margin-top: 20px;
     position: relative;
     left: 20%;
-    display: flex;
     border: 2px solid #ffffffd0;
     border-radius: 20px;
     width: 60%;
     height: 500px;
     overflow: auto;
     opacity: 0.85;
+}
+
+#container1,
+#container2,
+#container3 {
+    display: none;
 }
 
 img:hover {
